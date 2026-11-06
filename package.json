@@ -11,9 +11,15 @@
     "@eslint/js": "^10.0.1",
     "@playwright/test": "^1",
     "eslint": "^10.14.0",
-    "globals": "^17.14.0"
+    "globals": "^17.14.0",
+    "prettier": "3.9.10"
   },
-  "scripts": {},
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "husky"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
